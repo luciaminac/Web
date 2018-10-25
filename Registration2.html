@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+  <meta name="charset:UTF-8">
+<style>
+form{
+	padding-left: 35%;
+	padding-right: 35%;
+}
+
+caption{
+	background: #c9cacc;
+	padding: 5px;
+}
+
+table {
+  margin: auto;
+  box-sizing: border-box;
+  background-color: #f2f2f2
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+</style>
+</head>
+<form target="_blank">
+  <table>
+    <tbody>
+      <h1><center>Registration</center></h1>
+      <tr>
+        <td>Name:</td>
+        <td><input type="text" name="name" placeholder="Enter your name"></td>
+      </tr>
+      <tr>
+        <td>Password:</td>
+        <td><input type="text" name="pswd"></td>
+      </tr>
+      <tr>
+        <td>Date of Birth:</td>
+        <td><input type="date" name="dateofbirth" min="2000-01-01" placeholder="YYYY-MM-DD"></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td><input type="email" name="email"></td>
+      </tr>
+      <tr>
+        <td>Grade:</td>
+        <td><input type="text" name="grade"></td>
+      </tr>
+      <tr>
+        <td>Gender:</td>
+        <td><input type="radio" name="gender"value="1" checked>Male<br>
+          <input type="radio" name="gender" value="2">Female<br></td>
+        </tr>
+        <tr>
+          <td>Marital Status:</td>
+          <td><input type="radio" name="status" value="1" checked>Single<br>
+            <input type="radio" name="status" value="2">Married<br>
+            <input type="radio" name="status" value="3">Divorced<br>
+            <input type="radio" name="status" value="4">Widower<br></td>
+          </tr>
+          <tr>
+            <td>Languages:</td>
+            <td><input type="checkbox" name="languages" value="1" multiple>English<br>
+              <input type="checkbox" name="languages" value="2">German<br>
+              <input type="checkbox" name="languages" value="3">Russian<br>
+              <input type="checkbox" name="languages" value="4">Spain<br>
+              <input type="checkbox" name="languages" value="5">Other<br></td>
+            </tr>
+            <tr>
+              <td>Nationality:</td>
+              <td><select id="nationality" name="nationality">
+                <option value="slovak">Slovak</option>
+                <option value="czech">Czech</option>
+                <option value="hungarian">Hungarian</option>
+                <option value="polish">Polish</option>
+                <option value="hungarian">Hungarian</option>
+                <option value="ukrainian">Ukrainian</option>
+              </select></td>
+            </tr>
+            <tr>
+              <td>About:</td>
+              <td><textarea name="about" rows="15" cols="45" placeholder="Write us something about you..."></textarea></td>
+            </tr>
+                <tr>
+                  <td>Your CV:<br>
+                  <td><input type="file" name="Upload file" size="13"></td>
+                </tr>
+                <tr>
+                  <td>Are you happy:<br></td>
+                  <td>No<input type="range" name="happy">Yes</td><br>
+                </tr>
+                <tr>
+                  <td><br><input type="submit" name="submit" value="Reset" size="13"></td>
+                  <td><br><input type="submit" name="submit" value="Submit" size="13"></td>
+                </tr>
+
+</tbody>
+</table>
+</form>
+</tbody>
